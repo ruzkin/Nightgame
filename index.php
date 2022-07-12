@@ -52,8 +52,8 @@ footer
      <br>
      <?php
 
-
-     include_once "connection.php";
+                 /*PHP database part*/
+     include_once "connection.php"; /*Connection database*/
 
      if ($_SERVER["REQUEST_METHOD"] == "POST")
      {
@@ -67,10 +67,11 @@ footer
          {
              $cislo_lampy = $_POST["cislo_lampy"];
 
-
+             /*SQL request*/
              $sql = "SELECT Popis FROM Lampa WHERE Cislo_Lampy = $cislo_lampy";
              $result =  mysqli_query($conn,"$sql");
 
+             /*SQL results to html*/
              foreach ($result as $u)
              {
                  echo  '<tr>';
