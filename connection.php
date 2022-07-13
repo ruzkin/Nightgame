@@ -1,10 +1,4 @@
 <?php
-/*
-$host = "localhost";
-$user = "ete33e_2122ls_06";
-$password = '144.10D+096!33';
-$db_name = "ete33e_2122ls_06";
-*/
 
 
 $host = "";
